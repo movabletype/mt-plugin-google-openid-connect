@@ -40,15 +40,13 @@
 </mtapp:setting>
 </div>
 
-<script type="text/javascript">
-jQuery(function() {
-    jQuery('#goidc_setup_own_client_id').on('click', function() {
-        jQuery('#use-system-goidc-client').hide();
-        jQuery('#use-own-goidc-client').show();
-        return false;
-    });
+<mt:setvarblock name="jq_js_include" append="1">
+jQuery('#goidc_setup_own_client_id').on('click', function() {
+    jQuery('#use-system-goidc-client').hide();
+    jQuery('#use-own-goidc-client').show();
+    return false;
 });
-</script>
+</mt:setvarblock>
 </mtapp:settinggroup>
 
 </mt:If>
